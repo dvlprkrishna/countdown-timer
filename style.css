@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    background-image: url('./bg.jpg');
+    flex-direction: column;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 200;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.big-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0.2rem 2rem;
+}
+
+.countdown-elem {
+    margin: 1rem 0rem;
+    text-align: center;
+    background: #f5f5f55e;
+    border-radius: 10px;
+    margin: 0.5em;
+}
+
+.countdown-elem span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+#dateTime,
+.reset {
+    margin-top: 6em;
+    padding: 1em 1.5em;
+    border-radius: 15px;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s all;
+}
+
+#dateTime:hover,
+.reset:hover {
+    transition: 0.2s all;
+    opacity: 1;
+}
+
+.cards-wrap {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: whitesmoke;
+    border-radius: 15px;
+    margin: 0.5em;
+    padding: 1em 1.5em;
+    opacity: 0.8;
+    transition: 0.2s all;
+    min-width: 230px;
+}
+
+.cards:hover {
+    transition: 0.2s all;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.cards .emoji {
+    font-size: 2em;
+    margin: 0;
+    margin-left: -5px;
+
+}
+
+.cards span {
+
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+.created-by {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: whitesmoke;
+    padding: 0.5em 1.5em;
+    border-top-left-radius: 24px;
+    transition: 0.2s all;
+    opacity: 0.9;
+    text-decoration: none;
+    color: #222;
+}
+
+.created-by span {
+    margin-right: 0.5em;
+}
+
+.created-by img {
+    width: 25px;
+    border-radius: 50%;
+    border: 3px solid grey
+}

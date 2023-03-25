@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Heading -->
+    <h3 id="header-txt">Until new Beginning</h3>
+
+    <!-- CountDown Timer -->
+    <div class="countdown-container">
+        <div class="countdown-elem days-c">
+            <p class="big-text" id="days">0</p>
+            <span>days</span>
+        </div>
+        <div class="countdown-elem hours-c">
+            <p class="big-text" id="hours">0</p>
+            <span>hours</span>
+        </div>
+        <div class="countdown-elem mins-c">
+            <p class="big-text" id="mins">0</p>
+            <span>mins</span>
+        </div>
+        <div class="countdown-elem seconds-c">
+            <p class="big-text" id="secs">0</p>
+            <span>seconds</span>
+        </div>
+    </div>
+
+    <!-- Date Picker -->
+    <div>
+        <label for="dateTime" title="Pick a Date">
+            <input type="date" name="dateTime" id="dateTime">
+        </label>
+        <button type="reset" id="reset" class="reset" title="Reset Timer">↩️</button>
+    </div>
+
+    <!-- Pre Defined Holidays -->
+    <div class="cards-wrap">
+        <div class="cards" id="cards-diwali">
+            <p class="emoji">🎆🪔</p>
+            <span>Time till - Diwali</span>
+        </div>
+        <div class="cards" id="cards-holi">
+            <p class="emoji">💦🔫</p>
+            <span>Time till - Holi</span>
+        </div>
+        <div class="cards" id="cards-newyear">
+            <p class="emoji">🆕🎉</p>
+            <span>Time till - New Year</span>
+        </div>
+    </div>
+
+    <!-- Footer Link -->
+    <a class="created-by" href="https://krishnasahu.in" target="_blank">
+        <span>Created by - </span>
+        <img src="./profile.jpg" alt="Krishna Sahu">
+    </a>
+</body>
+
+</html>
